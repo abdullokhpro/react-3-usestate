@@ -1,0 +1,33 @@
+.category {
+  padding: 100px 0;
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 40px;
+    overflow: scroll;
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    background-color: #f6f6f6;
+    padding: 46px 29px 57px 41px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .category {
+    &__card {
+      width: 291px;
+      flex-direction: column;
+      text-align: center;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}
