@@ -1,0 +1,81 @@
+.newsletter {
+  &__container {
+    padding: 30px 0;
+    background: #f6f6f6;
+    border-radius: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__item__left {
+    width: 50%;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8b8e99;
+  }
+
+  &__right {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__input__div {
+    input {
+      padding: 18px 0px;
+      width: 80%;
+    }
+  }
+}
+
+.hero {
+  &__form {
+    &__form {
+      max-width: 425px;
+      position: relative;
+
+      &__search {
+        width: 100%;
+        padding: 21px 0px;
+        border-radius: 10px;
+        border: none;
+
+        &__icon {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          color: #3858d6;
+          font-size: 22px;
+        }
+      }
+
+      &__btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 11px 21px;
+        background-color: #3858d6;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 10px;
+      }
+    }
+  }
+}
